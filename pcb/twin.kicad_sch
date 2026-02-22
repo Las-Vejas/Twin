@@ -5643,131 +5643,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:VBUS"
-			(power)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "VBUS"
-				(at 0 3.556 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"VBUS\""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "VBUS_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "VBUS_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 	)
 	(text_box "Switch Matrix"
 		(exclude_from_sim no)
@@ -5913,6 +5788,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "271d52e6-1bd1-459f-96a2-6c9af99d5115")
+	)
+	(junction
+		(at 247.65 19.05)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "296017ac-9628-4b8e-95db-622893b4bd0b")
 	)
 	(junction
 		(at 50.8 148.59)
@@ -6382,12 +6263,18 @@
 		(color 0 0 0 0)
 		(uuid "fe2fb8e9-391b-4ad8-99e8-4061b56972ac")
 	)
+	(junction
+		(at 231.14 25.4)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fe573bef-95e7-44ac-bbd2-631ef4ee15b9")
+	)
 	(no_connect
 		(at 43.18 50.8)
 		(uuid "0744bae5-3d55-4073-a7e2-efc14ac08793")
 	)
 	(no_connect
-		(at 156.21 113.03)
+		(at 156.21 69.85)
 		(uuid "285611f6-9ada-430f-8e23-07a1c7c4edd1")
 	)
 	(no_connect
@@ -6423,7 +6310,7 @@
 		(uuid "6b97641c-2bcb-4d33-a21f-d5b301905f59")
 	)
 	(no_connect
-		(at 156.21 110.49)
+		(at 156.21 67.31)
 		(uuid "6cec7348-0c06-4b56-8f55-c5acf696d6ef")
 	)
 	(no_connect
@@ -6439,10 +6326,6 @@
 		(uuid "7f480847-906a-4cdb-b5c9-388d02fdbe40")
 	)
 	(no_connect
-		(at 156.21 87.63)
-		(uuid "8437352e-53cd-422a-8736-5c767fa5e159")
-	)
-	(no_connect
 		(at 156.21 57.15)
 		(uuid "86dd1b11-c11c-4e7e-aeb6-a9f85a02bbdf")
 	)
@@ -6455,8 +6338,12 @@
 		(uuid "98dafc7d-f1c2-41cb-a86e-e8f197317150")
 	)
 	(no_connect
-		(at 156.21 115.57)
+		(at 156.21 72.39)
 		(uuid "9d6acd2b-0a1f-448b-8dd6-834003736c35")
+	)
+	(no_connect
+		(at 156.21 52.07)
+		(uuid "9f68e707-9f05-4de6-a131-c77d54a0dc06")
 	)
 	(no_connect
 		(at 156.21 74.93)
@@ -6488,7 +6375,17 @@
 	)
 	(wire
 		(pts
-			(xy 156.21 100.33) (xy 165.1 100.33)
+			(xy 214.63 27.94) (xy 214.63 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "006670f8-0975-483e-b62d-155986730435")
+	)
+	(wire
+		(pts
+			(xy 156.21 74.93) (xy 165.1 74.93)
 		)
 		(stroke
 			(width 0)
@@ -7118,7 +7015,7 @@
 	)
 	(wire
 		(pts
-			(xy 156.21 102.87) (xy 165.1 102.87)
+			(xy 156.21 77.47) (xy 165.1 77.47)
 		)
 		(stroke
 			(width 0)
@@ -7748,7 +7645,7 @@
 	)
 	(wire
 		(pts
-			(xy 156.21 97.79) (xy 165.1 97.79)
+			(xy 156.21 72.39) (xy 165.1 72.39)
 		)
 		(stroke
 			(width 0)
@@ -7808,7 +7705,7 @@
 	)
 	(wire
 		(pts
-			(xy 165.1 105.41) (xy 156.21 105.41)
+			(xy 165.1 80.01) (xy 156.21 80.01)
 		)
 		(stroke
 			(width 0)
@@ -7938,7 +7835,7 @@
 	)
 	(wire
 		(pts
-			(xy 165.1 67.31) (xy 156.21 67.31)
+			(xy 165.1 110.49) (xy 156.21 110.49)
 		)
 		(stroke
 			(width 0)
@@ -8208,6 +8105,16 @@
 	)
 	(wire
 		(pts
+			(xy 231.14 25.4) (xy 232.41 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a89ace6e-f2d5-46d5-b4dc-f89aeb803621")
+	)
+	(wire
+		(pts
 			(xy 64.77 69.85) (xy 66.04 69.85)
 		)
 		(stroke
@@ -8235,6 +8142,16 @@
 			(type default)
 		)
 		(uuid "ab436ab8-1a05-483d-becc-249e71441a88")
+	)
+	(wire
+		(pts
+			(xy 214.63 25.4) (xy 215.9 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ad525b55-805e-435a-b8cd-60c96c463bd7")
 	)
 	(wire
 		(pts
@@ -8278,6 +8195,16 @@
 	)
 	(wire
 		(pts
+			(xy 231.14 19.05) (xy 247.65 19.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b3133189-7f2b-4d2f-a6d2-dcd8109c23a6")
+	)
+	(wire
+		(pts
 			(xy 72.39 177.8) (xy 88.9 177.8)
 		)
 		(stroke
@@ -8318,7 +8245,7 @@
 	)
 	(wire
 		(pts
-			(xy 165.1 69.85) (xy 156.21 69.85)
+			(xy 165.1 113.03) (xy 156.21 113.03)
 		)
 		(stroke
 			(width 0)
@@ -8388,6 +8315,16 @@
 	)
 	(wire
 		(pts
+			(xy 220.98 43.18) (xy 232.41 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "be11e514-fb00-4dbf-ab7d-327e124582e5")
+	)
+	(wire
+		(pts
 			(xy 62.23 121.92) (xy 62.23 120.65)
 		)
 		(stroke
@@ -8395,6 +8332,16 @@
 			(type default)
 		)
 		(uuid "bfd677eb-3999-4fac-9fcf-af4f99f6c074")
+	)
+	(wire
+		(pts
+			(xy 231.14 24.13) (xy 231.14 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c3e251b3-17ab-426f-8f12-eab51855054f")
 	)
 	(wire
 		(pts
@@ -8588,6 +8535,16 @@
 	)
 	(wire
 		(pts
+			(xy 226.06 25.4) (xy 231.14 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d7a4484f-4e9a-441b-af52-98a6aec574ac")
+	)
+	(wire
+		(pts
 			(xy 138.43 20.32) (xy 138.43 22.86)
 		)
 		(stroke
@@ -8685,6 +8642,16 @@
 			(type default)
 		)
 		(uuid "e3b48f39-497b-4b1c-ade1-94ceca25f3fb")
+	)
+	(wire
+		(pts
+			(xy 220.98 40.64) (xy 232.41 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e5a09c28-0968-461e-b68a-19eaf4b2470f")
 	)
 	(wire
 		(pts
@@ -8808,7 +8775,7 @@
 	)
 	(wire
 		(pts
-			(xy 156.21 52.07) (xy 170.18 52.07)
+			(xy 156.21 87.63) (xy 170.18 87.63)
 		)
 		(stroke
 			(width 0)
@@ -8828,7 +8795,7 @@
 	)
 	(wire
 		(pts
-			(xy 165.1 72.39) (xy 156.21 72.39)
+			(xy 165.1 115.57) (xy 156.21 115.57)
 		)
 		(stroke
 			(width 0)
@@ -9006,8 +8973,18 @@
 		)
 		(uuid "48893e57-81ca-4f3b-8322-52eafab99713")
 	)
+	(label "ESP-SDA"
+		(at 220.98 43.18 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4ddbd035-91b9-4007-811b-3d16fb728bcd")
+	)
 	(label "r1"
-		(at 165.1 67.31 180)
+		(at 165.1 110.49 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9017,7 +8994,7 @@
 		(uuid "4f87a925-de0c-47a8-9943-96309ba3aef8")
 	)
 	(label "r3"
-		(at 165.1 72.39 180)
+		(at 165.1 115.57 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9057,7 +9034,7 @@
 		(uuid "71ae7908-bdfa-46fd-80e4-9efd794d13ce")
 	)
 	(label "c3"
-		(at 165.1 100.33 180)
+		(at 165.1 74.93 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9087,7 +9064,7 @@
 		(uuid "808cd7d6-c8a2-4156-8662-eeb81db4ba86")
 	)
 	(label "backlight"
-		(at 170.18 52.07 180)
+		(at 170.18 87.63 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9097,7 +9074,7 @@
 		(uuid "89d65415-db6e-4774-bfe0-373d18522e63")
 	)
 	(label "c2"
-		(at 165.1 102.87 180)
+		(at 165.1 77.47 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9157,7 +9134,7 @@
 		(uuid "9da848cd-7210-4197-b4cb-39cdbaae9783")
 	)
 	(label "c4"
-		(at 165.1 97.79 180)
+		(at 165.1 72.39 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9186,8 +9163,18 @@
 		)
 		(uuid "a27802f6-b409-4851-bf3d-eeb979e7cc43")
 	)
+	(label "ESP-SCL"
+		(at 220.98 40.64 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a3434652-a1ee-4a3c-85b7-d879c66d796b")
+	)
 	(label "c1"
-		(at 165.1 105.41 180)
+		(at 165.1 80.01 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9197,7 +9184,7 @@
 		(uuid "a4ae3e51-68a7-4e23-ba10-4120a692ba47")
 	)
 	(label "r2"
-		(at 165.1 69.85 180)
+		(at 165.1 113.03 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9363,7 +9350,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 157.48 25.4 0)
 			(effects
 				(font
@@ -9586,7 +9573,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm"
 			(at 59.69 69.85 0)
 			(effects
 				(font
@@ -9862,7 +9849,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+		(property "Footprint" "LED_SMD:LED_SK6812MINI-E_3.2x2.8mm_P1.5mm_ReverseMount"
 			(at 264.16 200.66 0)
 			(effects
 				(font
@@ -9940,7 +9927,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 39.37 95.25 0)
 			(effects
 				(font
@@ -10287,7 +10274,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 147.32 25.4 0)
 			(effects
 				(font
@@ -10354,7 +10341,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 97.79 51.308 90)
 			(effects
 				(font
@@ -10523,72 +10510,6 @@
 			(project "tsuin"
 				(path "/6af2f588-9f45-4d32-90e0-4dd3725d2353"
 					(reference "#PWR09")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VBUS")
-		(at 48.26 21.59 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "258d5ea3-f559-451a-afa0-dfdf42636965")
-		(property "Reference" "#PWR04"
-			(at 48.26 25.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VBUS"
-			(at 48.26 16.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 48.26 21.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 48.26 21.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VBUS\""
-			(at 48.26 21.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "308ab7d2-6ab9-41c5-8a19-c0b86ffb8c1d")
-		)
-		(instances
-			(project ""
-				(path "/6af2f588-9f45-4d32-90e0-4dd3725d2353"
-					(reference "#PWR04")
 					(unit 1)
 				)
 			)
@@ -11310,7 +11231,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 152.4 25.4 0)
 			(effects
 				(font
@@ -11378,7 +11299,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+		(property "Footprint" "LED_SMD:LED_SK6812MINI-E_3.2x2.8mm_P1.5mm_ReverseMount"
 			(at 172.72 200.66 0)
 			(effects
 				(font
@@ -11531,7 +11452,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 170.18 25.4 0)
 			(effects
 				(font
@@ -11599,7 +11520,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+		(property "Footprint" "LED_SMD:LED_SK6812MINI-E_3.2x2.8mm_P1.5mm_ReverseMount"
 			(at 287.02 200.66 0)
 			(effects
 				(font
@@ -11806,7 +11727,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+		(property "Footprint" "LED_SMD:LED_SK6812MINI-E_3.2x2.8mm_P1.5mm_ReverseMount"
 			(at 218.44 200.66 0)
 			(effects
 				(font
@@ -11946,7 +11867,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 46.99 27.94 0)
 			(effects
 				(font
@@ -12216,7 +12137,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 187.96 25.4 0)
 			(effects
 				(font
@@ -12329,6 +12250,73 @@
 			(project ""
 				(path "/6af2f588-9f45-4d32-90e0-4dd3725d2353"
 					(reference "D5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 231.14 21.59 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5fd6069b-de2b-47dd-bf6d-7af556081fea")
+		(property "Reference" "R8"
+			(at 229.616 21.59 90)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 231.14 21.59 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 231.14 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 231.14 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 231.14 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "3eac4c4c-d699-4545-b96b-e60df8729f51")
+		)
+		(pin "1"
+			(uuid "62409ca6-862d-4b0f-b751-8e0e68f45192")
+		)
+		(instances
+			(project "twin"
+				(path "/6af2f588-9f45-4d32-90e0-4dd3725d2353"
+					(reference "R8")
 					(unit 1)
 				)
 			)
@@ -12977,7 +12965,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+		(property "Footprint" "LED_SMD:LED_SK6812MINI-E_3.2x2.8mm_P1.5mm_ReverseMount"
 			(at 243.84 200.66 0)
 			(effects
 				(font
@@ -13129,7 +13117,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+		(property "Footprint" "LED_SMD:LED_SK6812MINI-E_3.2x2.8mm_P1.5mm_ReverseMount"
 			(at 198.12 200.66 0)
 			(effects
 				(font
@@ -13294,7 +13282,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 86.36 27.94 0)
 			(effects
 				(font
@@ -13362,7 +13350,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+		(property "Footprint" "LED_SMD:LED_SK6812MINI-E_3.2x2.8mm_P1.5mm_ReverseMount"
 			(at 220.98 200.66 0)
 			(effects
 				(font
@@ -13581,7 +13569,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 46.99 30.48 0)
 			(effects
 				(font
@@ -13880,7 +13868,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 110.49 24.13 0)
 			(effects
 				(font
@@ -14014,7 +14002,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+		(property "Footprint" "LED_SMD:LED_SK6812MINI-E_3.2x2.8mm_P1.5mm_ReverseMount"
 			(at 175.26 200.66 0)
 			(effects
 				(font
@@ -14252,7 +14240,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+		(property "Footprint" "LED_SMD:LED_SK6812MINI-E_3.2x2.8mm_P1.5mm_ReverseMount"
 			(at 241.3 200.66 0)
 			(effects
 				(font
@@ -14405,7 +14393,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 196.85 25.4 0)
 			(effects
 				(font
@@ -14474,7 +14462,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 182.88 25.4 0)
 			(effects
 				(font
@@ -14541,7 +14529,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 72.39 73.66 0)
 			(effects
 				(font
@@ -15190,7 +15178,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 49.53 65.0748 0)
 			(effects
 				(font
@@ -15326,7 +15314,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_SO:SOIC-8_5.3x5.3mm_P1.27mm"
+		(property "Footprint" "Package_SON:Winbond_USON-8-1EP_3x2mm_P0.5mm_EP0.2x1.6mm"
 			(at 62.23 107.95 0)
 			(effects
 				(font
@@ -15381,6 +15369,74 @@
 			(project ""
 				(path "/6af2f588-9f45-4d32-90e0-4dd3725d2353"
 					(reference "U4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 220.98 25.4 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c12729af-c4a2-4367-9ba1-2bc397589496")
+		(property "Reference" "SW14"
+			(at 220.98 17.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 220.98 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 220.98 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 220.98 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 220.98 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fc9ff42c-6632-48e7-9182-201b50029026")
+		)
+		(pin "2"
+			(uuid "9c6add90-c2cb-4e5c-ae0f-dbef9e32b6e6")
+		)
+		(instances
+			(project ""
+				(path "/6af2f588-9f45-4d32-90e0-4dd3725d2353"
+					(reference "SW14")
 					(unit 1)
 				)
 			)
@@ -15479,7 +15535,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 100.33 24.13 0)
 			(effects
 				(font
@@ -15548,7 +15604,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 105.41 24.13 0)
 			(effects
 				(font
@@ -15615,7 +15671,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 49.53 72.6948 0)
 			(effects
 				(font
@@ -15752,7 +15808,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 64.77 27.94 0)
 			(effects
 				(font
@@ -15821,7 +15877,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 176.53 25.4 0)
 			(effects
 				(font
@@ -15977,7 +16033,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+		(property "Footprint" "LED_SMD:LED_SK6812MINI-E_3.2x2.8mm_P1.5mm_ReverseMount"
 			(at 195.58 200.66 0)
 			(effects
 				(font
@@ -16053,7 +16109,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+		(property "Footprint" "LED_SMD:LED_SK6812MINI-E_3.2x2.8mm_P1.5mm_ReverseMount"
 			(at 153.67 200.66 0)
 			(effects
 				(font
@@ -16129,7 +16185,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+		(property "Footprint" "LED_SMD:LED_SK6812MINI-E_3.2x2.8mm_P1.5mm_ReverseMount"
 			(at 289.56 200.66 0)
 			(effects
 				(font
@@ -16204,7 +16260,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 67.31 87.63 0)
 			(effects
 				(font
@@ -16400,6 +16456,138 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+5V")
+		(at 48.26 21.59 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "dedaf5c2-be02-42be-89b3-d419a29a4272")
+		(property "Reference" "#PWR04"
+			(at 48.26 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 48.26 16.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 48.26 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 48.26 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 48.26 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2786c843-1737-4dfc-b1e7-567521bbaee0")
+		)
+		(instances
+			(project ""
+				(path "/6af2f588-9f45-4d32-90e0-4dd3725d2353"
+					(reference "#PWR04")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 214.63 27.94 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e2ee6982-4504-4644-96cd-df42611b9c39")
+		(property "Reference" "#PWR028"
+			(at 214.63 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 214.63 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 214.63 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 214.63 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 214.63 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2e36370c-5955-4291-85eb-ed9ec55ea5b4")
+		)
+		(instances
+			(project "twin"
+				(path "/6af2f588-9f45-4d32-90e0-4dd3725d2353"
+					(reference "#PWR028")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_Small")
 		(at 33.02 100.33 90)
 		(unit 1)
@@ -16425,7 +16613,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 33.02 100.33 0)
 			(effects
 				(font
@@ -16562,7 +16750,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 163.83 25.4 0)
 			(effects
 				(font
@@ -17233,7 +17421,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+		(property "Footprint" "LED_SMD:LED_SK6812MINI-E_3.2x2.8mm_P1.5mm_ReverseMount"
 			(at 266.7 200.66 0)
 			(effects
 				(font
@@ -17531,7 +17719,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 97.79 53.848 90)
 			(effects
 				(font
