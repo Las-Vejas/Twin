@@ -1,0 +1,19 @@
+uart:
+  id: rp_uart
+  tx_pin: GPIO30   # ESP-TX
+  rx_pin: GPIO31   # ESP-RX
+  baud_rate: 115200
+
+text_sensor:
+  - platform: uart
+    name: "Macropad Command"
+    uart_id: rp_uart
+    separator: "\n"
+    on_value:
+      then:
+        - lambda: |-
+            std::string val = x;
+            if (val.find("toggle") != std::string::npos) {
+              // call HA service
+            }
+            // parse JSON or simple string matching here
